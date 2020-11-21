@@ -1,0 +1,25 @@
+.sc-custom-checkbox {
+    cursor: pointer;
+    .check-mark {
+        width: toRem(15);
+        height: toRem(15);
+        border: toRem(2) solid $black;
+        border-radius: toRem(2);
+        float: left;
+        margin: toRem(4) toRem(10) toRem(4) 0;
+        position: relative;
+    }
+    input[type='checkbox'] {
+        visibility: hidden;
+        &:checked + .check-mark {
+            border-color: $gold;
+            background-color: $gold;
+            &::after {
+                content: '\2714';
+                position: absolute;
+                top: -6px;
+                left: 0;
+            }
+        }
+    }
+}

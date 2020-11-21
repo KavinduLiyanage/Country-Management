@@ -1,0 +1,29 @@
+.sc-pagination {
+    float: right;
+    margin-top: toRem(60);
+    .page-item.active .page-link {
+        background-color: $light-gold;
+        border-color: $light-gold;
+    }
+    .page-link{
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .page-selection {
+        float: left;
+        position: relative;
+    }
+    .sc-title-4 {
+        position: absolute;
+        left: toRem(-120);
+        top: toRem(12);
+    } 
+    .floating-label-component {
+        width: toRem(100);
+        margin-top: toRem(-11);
+        margin-right: toRem(20);
+    }
+
+}

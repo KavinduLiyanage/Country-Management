@@ -1,0 +1,43 @@
+.login {
+    padding: toRem(50) 0;
+    .logo {
+        text-align: center;
+        width: toRem(140);
+        margin-bottom: toRem(50);
+    }
+    .form-container {
+        border-radius: toRem(4);
+        background-color: $white;
+        box-shadow: inset 0 toRem(-1) 0 0 $gold, inset 0 toRem(1) 0 0 $gold,
+            0 toRem(2) toRem(20) 0 rgba(0, 0, 0, 0.05);
+        padding: toRem(60) toRem(100);
+        margin-bottom: toRem(30);
+
+        .forget-pw-wrapper {
+            margin: 0 0 toRem(36);
+            label,
+            a {
+                margin-top: toRem(15);
+            }
+        }
+    }
+    &.signup {
+        h2 {
+            margin: toRem(50) 0 toRem(25) 0;
+        }
+        .floating-label-component .floating-label {
+            left: toRem(15);
+        }
+        .sc-btn-primary {
+            margin-top: toRem(30);
+        }
+    }
+}
+
+@include smallScreens {
+    .login {
+        .form-container {
+            padding: toRem(24);
+        }
+    }
+}

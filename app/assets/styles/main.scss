@@ -1,0 +1,309 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import '~react-notifications/lib/notifications.css';
+@import "./variables";
+@import "./functions";
+@import "./mixins";
+@import "./components/";
+@import "./pages/";
+
+:root {
+    font-size: 16px;
+}
+
+body, p {
+	background: $default-background;
+	font-family: $open-sans;
+	font-size: toRem(16);
+	color: $dark-black;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: toRem(26);
+}
+.small-grey {
+	font-family: $open-sans;
+	font-size: toRem(14);
+	color: $grey;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: toRem(24);
+}
+
+.sc-title-1 {
+	font-family: $open-sans;
+	font-size: toRem(24);
+	color: $dark-black;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: toRem(34);
+}
+.sc-title-2 {
+	font-family: $open-sans;
+	font-size: toRem(18);
+	color: $dark-black;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: toRem(28);
+}
+.sc-title-3 {
+	font-family: $open-sans;
+	font-size: toRem(18);
+	color: $dark-black;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: toRem(28);
+}
+.sc-title-4 {
+	font-family: $open-sans;
+	font-size: toRem(12);
+	color: $dark-black;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+//link
+.sc-link-gold {
+	font-family: $open-sans;
+	font-size: toRem(16);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0;
+	color: $light-gold;
+	cursor: pointer;
+	&:hover {
+        color: $gold;
+	}
+}
+.sc-link-dark {
+	font-family: $open-sans;
+	font-size: toRem(16);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: $light-black;
+	cursor: pointer;
+	&:hover {
+        color: $light-black-2;
+	}
+}
+
+//button
+.sc-btn-primary {
+	border-radius: toRem(4);
+	background-color: $light-gold;
+	padding: toRem(16) toRem(30);
+	color: $white;
+	font-family: $open-sans;
+	font-size: toRem(14);
+	font-weight: 600;
+	line-height: toRem(19);
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		background-color: $gold;
+        color: $white;
+	}
+	height: 50px;
+}
+.sc-btn-primary-outline {
+    border-radius: toRem(4);
+    border: solid toRem(1) $gold;
+	background-color: $white;
+    color: $gold;
+	padding: toRem(16) toRem(20);
+	font-family: $open-sans;
+	font-size: toRem(14);
+	font-weight: 600;
+	line-height: toRem(19);
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+        border: solid toRem(1) $light-gold;
+        background-color: $white;
+        color: $light-gold;
+	}
+}
+.sc-btn-secondary {
+	border-radius: toRem(4);
+	background-color: $light-gold;
+	padding: toRem(10) toRem(21);
+	color: $white;
+	font-family: $open-sans;
+	font-size: toRem(10);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		background-color: $gold;
+        color: $white;
+	}
+}
+.sc-btn-black {
+	border-radius: toRem(4);
+	background-color: $dark-black;
+	padding: toRem(16) toRem(40);
+	color: $white;
+	font-family: $open-sans;
+	font-size: toRem(14);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		background-color: $light-black;
+        color: $white;
+	}
+}
+.sc-btn-red {
+	border-radius: toRem(4);
+	background-color: $dark-red;
+	padding: toRem(12) toRem(16);
+	color: $white;
+	font-family: $open-sans;
+	font-size: toRem(10);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		background-color: $dark-red;
+        color: $white;
+	}
+}
+
+.sc-btn-primary-v2 {
+	border-radius: toRem(4);
+	background-color: rgba(207,184,124,0.5);
+	padding: toRem(20);
+	color: $light-black;
+	font-family: $open-sans;
+	font-size: toRem(18);
+	font-weight: 600;
+	line-height: toRem(24);
+	cursor: pointer;
+	&:hover {
+        color: $light-black-2;
+	}
+}
+
+.sc-table-heading {
+	th {
+		font-size: toRem(12);
+		font-weight: 800;
+	}
+	tr td {
+		padding: toRem(15) toRem(20);
+		vertical-align: middle;
+		font-size: toRem(13);
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.23;
+		letter-spacing: normal;
+	}
+}
+
+.popover {
+	.popover-header {
+		cursor: pointer;
+		background: $light-grey-2 !important;
+		font-size: toRem(14);
+		border-radius: unset;
+		border-color: $light-grey-2;
+
+		&:hover {
+			background: $light-grey !important;
+		}
+		&:before {
+			border-bottom: none !important;
+		}
+	}
+	.arrow:after {
+		border-bottom-color:$light-grey-2 !important;
+	}
+	.link-btn {
+        text-decoration: none;
+		color: $black;
+		width: 100%;
+		padding: 0;
+		text-align: left;
+    }
+}
+
+.badge-active {
+	background: $gold;
+    width: toRem(50);
+    height: toRem(20);
+    line-height: 1.7;
+}
+
+.badge-inactive {
+	background: $grey;
+    width: toRem(50);
+    height: toRem(20);
+    line-height: 1.7;
+}
+
+.sc-sort-icons {
+	position: relative;
+	span:nth-child(1) {
+		position: absolute;
+		bottom: toRem(-2);
+		transform: scale(0.4);
+	}
+	span:nth-child(2) {
+		position: absolute;
+		transform: scale(0.4) rotate(180deg);
+		top:toRem(-5);
+	}
+}	
+
+.modal-content{
+	overflow: hidden;
+	border-radius: toRem(10);
+}
+
+.sc-link-btn {
+	border: none;
+	background: inherit;
+	&:focus {
+		outline: none;
+	}
+}
+
+.error-country {
+	font-family: $open-sans;
+	font-weight: 600;
+	line-height: toRem(9);
+	color: red;
+}
+.main-dashboard-component {
+	margin: 40px 0;
+	h2 {
+		margin-bottom: 30px;
+	}
+	.result-container {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+.back-btn {
+	padding-left: 40px;
+	.icon-arrow-left {
+		position: absolute;
+		left: 25px;
+	}
+}

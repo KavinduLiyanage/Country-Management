@@ -1,0 +1,30 @@
+// Extra small devices (portrait phones, less than 576px)
+@mixin extraSmallScreens {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin smallScreens {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin mediumScreen {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+// ipad devices (ipads, less than 1024px)
+@mixin ipadScreen {
+    @media (max-width: 1024.98px) {
+        @content;
+    }
+}
+// Large screen devices (Desktop, larger than 1200px)
+@mixin largeScreen {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
